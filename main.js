@@ -27,14 +27,14 @@ console.log('Il tuo biglietto costa: '+price+' €');
 
 
 // Creare evento al click del bottone Genera
-const name = document.getElementById('name');
-const km = document.getElementById('km');
-const age = document.getElementById('age');
+const inpuNname = document.getElementById('name');
+const inputKm = document.getElementById('km');
+const inputAge = document.getElementById('age');
 
-document.getElementById("click").addEventListener("click", function() {
+addEventListener ( 'click', function() {
      
 // Inserire nel html nome e cognome passeggero
-name.innerHTML = name
+
 
 // Chiedere età passeggero
 
@@ -47,5 +47,4 @@ name.innerHTML = name
 
 // Se l'età è maggiore di 65 applico uno sconto del 40%
 
-
-} ) ;
+} )
