@@ -16,11 +16,11 @@
                 <div class="p-container">
                     <div class="nome">
                         <div>Nome e Cognome</div>
-                        <input type="text" id="name">
+                        <input type="text" id="name" value="Ciao">
                     </div>
                     <div class="treno">
                         <div>Km da percorrere</div>
-                        <input type="number" id="km" name="quantity" min="1" max="300">
+                        <input type="number" id="km" name="quantity" min="1" max="300" value="10">
                     </div>
                     <div class="eta">
                          <div>Fascia d'età</div>
@@ -32,7 +32,7 @@
                     
                 </div>
                 <div class="bottoni">
-                    <input type="button" id="click" value="Genera">
+                    <input type="button" id="genera" value="Genera">
                     <input type="button" value="Annulla">
                 </div>
                 
@@ -41,7 +41,8 @@
         </div>
 
     </div>
-    
+    <p id="nome_utente"></p>
+    <p id="km_treno"></p>
     <script src="main.js"></script>
 </body>
 </html>

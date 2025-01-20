@@ -24,23 +24,3 @@ h1 {
     justify-content: center;
     gap: 2%;
 }
-
-.nome {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    gap: 30%;
-}
-.treno {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    gap: 30%;
-}
-
-.eta {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    gap: 30%;
-}

@@ -27,24 +27,36 @@ console.log('Il tuo biglietto costa: '+price+' €');
 
 
 // Creare evento al click del bottone Genera
-const inpuNname = document.getElementById('name');
-const inputKm = document.getElementById('km');
+
 const inputAge = document.getElementById('age');
 
-addEventListener ( 'click', function() {
-     
+const button = document.getElementById('genera');
+button.addEventListener ( 'click', function() {
+
+
 // Inserire nel html nome e cognome passeggero
+const inputNname = document.getElementById('name');//<input type="text" id="name" value=""></input>
+const nomeUtente = inputNname.value;
+
+const doveDevoScrivere = document.getElementById('nome_utente')
+doveDevoScrivere.innerHTML = nomeUtente;
 
 
+// Chiedere Km da fare 
+const inputKm = document.getElementById('km');
+const km_treno = inputKm.value;
+
+const scrivereKmtreno = document.getElementById('km_treno')
+scrivereKmtreno.innerHTML = km_treno;
 // Chiedere età passeggero
-
-
-// inserire nel html costo biglietto 
 
 
 // Se l'età è minore di 18 applico uno sconto del 20%
 
 
 // Se l'età è maggiore di 65 applico uno sconto del 40%
+
+
+// Inserire nel html costo biglietto 
 
 } )
