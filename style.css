@@ -1,7 +1,7 @@
 .container {
     background-color: rgb(251, 68, 68);
-    color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
 }
 
 h1 {
@@ -10,5 +10,37 @@ h1 {
 
 .incontainer {
     background-color: white;
-    text-align: center;
+}
+
+.p-container {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 5%;
+}
+
+.bottoni {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.nome {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
+}
+.treno {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
+}
+
+.eta {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
 }

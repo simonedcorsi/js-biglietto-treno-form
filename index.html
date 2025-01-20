@@ -13,14 +13,29 @@
         
         <div class="incontainer">
             <form action="">
-                <input type="text" id="name">
-                <input type="text" id="km">
-                <select name="scelta" id="">
-                    <option value="">Maggiorenne</option>
-                    <option value="">Minorenne</option>
-                </select>
-                <input type="button" value="Genera">
+                <div class="p-container">
+                    <div class="nome">
+                        <div>Nome e Cognome</div>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="treno">
+                        <div>Km da percorrere</div>
+                        <input type="number" id="km" name="quantity" min="1" max="300">
+                    </div>
+                    <div class="eta">
+                         <div>Fascia d'età</div>
+                         <select name="scelta" id="age">
+                             <option value="maggiorenne">Maggiorenne</option>
+                             <option value="minorenne">Minorenne</option>
+                         </select>
+                    </div>
+                    
+                </div>
+                <div class="bottoni">
+                    <input type="button" id="click" value="Genera">
                 <input type="button" value="Annulla">
+                </div>
+                
             </form>
             
         </div>
