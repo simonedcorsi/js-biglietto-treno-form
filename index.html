@@ -16,11 +16,11 @@
                 <div class="p-container">
                     <div class="nome">
                         <div>Nome e Cognome</div>
-                        <input type="text" id="name" value="Ciao">
+                        <input type="text" id="name" value="Nome e Cognome">
                     </div>
                     <div class="treno">
                         <div>Km da percorrere</div>
-                        <input type="number" id="km" name="quantity" min="1" max="300" value="10">
+                        <input type="number" id="km" name="quantity" min="1" max="300" value="20">
                     </div>
                     <div class="eta">
                          <div>Fascia d'età</div>
@@ -40,13 +40,31 @@
             
         </div>
 
-    </div>
-    <h1 style="margin-top: 5%;">Il tuo biglietto</h1>
-    <div class="biglietto">
-         <p id="nome_utente"></p>
-         <p id="km_treno"></p>
-         <p id="prezzo_finale"></p>
-    </div>
+    
+       <h1>Il tuo biglietto</h1>
+       <div class="biglietto">
+
+          <div class="passeggero">
+            <h3>NOME PASSEGGERO</h3>  
+            <p id="nome_utente"></p>
+          </div>
+
+          <div>
+            <h4>Carrozza</h4>
+            <p id="carrozza"></p>
+          </div>
+
+          <div class="treno">
+            <h4>Km Treno</h4>
+            <p id="km_treno"></p>
+          </div> 
+           <div class="final-price">
+            <h4>Costo Biglietto</h4>
+            <p id="prezzo_finale"></p>
+           </div>
+           
+        </div>
+</div>
          
     <script src="main.js"></script>
 </body>

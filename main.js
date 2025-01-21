@@ -22,7 +22,7 @@ scrivereKmtreno.innerHTML = km_treno;
 // Chiedere età passeggero
 const inputAge = document.getElementById('age');
 const age = inputAge.value;
-
+const carrozza = document.getElementById('carrozza')
 console.log(nomeUtente,km_treno,age )
 
 // Se l'età è minore di 18 applico uno sconto del 20%
@@ -40,14 +40,18 @@ if(age > 65){
     prezzo_finale = price - km_treno ;
 }
 
+carrozza.innerHTML = randomNumber(1,99)
+
+// Prezzo finale biglietto
 const scriverePrezzo = document.getElementById('prezzo_finale')
 scriverePrezzo.innerHTML = price;
 
-
-// Prezzo finale biglietto
 console.log('Il tuo biglietto costa: '+price+' €');
 
 
-// Inserire nel html costo biglietto 
 
 } )
+
+function randomNumber(min,max) {
+Math.floor(Math.random() * max) + min;
+}
