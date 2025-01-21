@@ -48,7 +48,7 @@ button.addEventListener ( 'click', function() {
      // Altrimenti non applicare nessuno sconto
     else {
         const scriverePrezzo = document.getElementById('prezzo_finale')
-        price.innerHTML = price;
+        scriverePrezzo.innerHTML = price;
     }
     
     carrozza.innerHTML = randomNumber(1,99)
