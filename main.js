@@ -1,34 +1,4 @@
-// Chiedo all'utente la distanza da percorrere e l'età
-let kmtreno = ("Quanti Km desideri percorerre?");
-let eta = ("Quanti anni hai?");
-
-// Calcolo il prezzo di base (kilometri* tariffa al kilometro)
-let price = kmtreno * 0.21;
-
-
-// Se l'età è minore di 18 applico uno sconto del 20%
-if(eta < 18){
-    let discount = price * 0.2;
-    price = price - discount;
-}
-
-
-// Se l'età è maggiore di 65 applico uno sconto del 40%
-if(eta > 65){
-    let discount = price * 0.4;
-    price = price - discount;
-}
-
-
-// Prezzo finale biglietto
-console.log('Il tuo biglietto costa: '+price+' €');
-
-
-
-
 // Creare evento al click del bottone Genera
-
-const inputAge = document.getElementById('age');
 
 const button = document.getElementById('genera');
 button.addEventListener ( 'click', function() {
@@ -48,13 +18,36 @@ const km_treno = inputKm.value;
 
 const scrivereKmtreno = document.getElementById('km_treno')
 scrivereKmtreno.innerHTML = km_treno;
-// Chiedere età passeggero
 
+// Chiedere età passeggero
+const inputAge = document.getElementById('age');
+const age = inputAge.value;
+
+console.log(nomeUtente,km_treno,age )
 
 // Se l'età è minore di 18 applico uno sconto del 20%
+const finalPrice = document.getElementById('prezzo_finale')
+const prezzo_finale = prezzo_finale.value;
+
+const scriverePrezzo = document.getElementById('prezzo_finale')
+scriverePrezzo.innerHTML = prezzo_finale;
+
+
+if(age < 18){
+    let discount = price * 0.2;
+    price = price - discount;
+}
 
 
 // Se l'età è maggiore di 65 applico uno sconto del 40%
+if(age > 65){
+    let discount = price * 0.4;
+    price = price - discount;
+}
+
+
+// Prezzo finale biglietto
+console.log('Il tuo biglietto costa: '+price+' €');
 
 
 // Inserire nel html costo biglietto 
