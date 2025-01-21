@@ -26,29 +26,26 @@ const age = inputAge.value;
 console.log(nomeUtente,km_treno,age )
 
 // Se l'età è minore di 18 applico uno sconto del 20%
-const finalPrice = document.getElementById('prezzo_finale')
-const prezzo_finale = prezzo_finale.value;
-
-const scriverePrezzo = document.getElementById('prezzo_finale')
-scriverePrezzo.innerHTML = prezzo_finale;
-
 let price = km_treno * 0.21;
 
 if(age < 18){
-    let km_treno = prezzo_finale * 0.2;
-    price = prezzo_finale - discount;
+    let km_treno = price * 0.2;
+    prezzo_finale = price - km_treno;
 }
 
 
 // Se l'età è maggiore di 65 applico uno sconto del 40%
 if(age > 65){
-    let km_treno = prezzo_finale * 0.4;
-    price = prezzo_finale - discount;
+    let km_treno = price * 0.4;
+    prezzo_finale = price - km_treno ;
 }
+
+const scriverePrezzo = document.getElementById('prezzo_finale')
+scriverePrezzo.innerHTML = price;
 
 
 // Prezzo finale biglietto
-console.log('Il tuo biglietto costa: '+prezzo_finale+' €');
+console.log('Il tuo biglietto costa: '+price+' €');
 
 
 // Inserire nel html costo biglietto 
