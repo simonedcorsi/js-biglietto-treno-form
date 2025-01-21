@@ -23,6 +23,7 @@ button.addEventListener ( 'click', function() {
     const age = inputAge.value;
 
     const carrozza = document.getElementById('carrozza')
+
     console.log(nomeUtente,km_treno,age )
 
     let price = km_treno * 0.21;
@@ -44,17 +45,13 @@ button.addEventListener ( 'click', function() {
         const scriverePrezzo = document.getElementById('prezzo_finale')
         scriverePrezzo.innerHTML = prezzo_finale ;
     }
-    
+     // Altrimenti non applicare nessuno sconto
     else {
         const scriverePrezzo = document.getElementById('prezzo_finale')
-        price.innerHTML = km_treno;
+        price.innerHTML = price;
     }
     
-    
     carrozza.innerHTML = randomNumber(1,99)
-
-    // Prezzo finale biglietto
-    
 
 } )
 
