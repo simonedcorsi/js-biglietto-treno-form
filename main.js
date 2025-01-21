@@ -34,7 +34,7 @@ button.addEventListener ( 'click', function() {
         let sconto = price * 0.2;
         prezzo_finale = price - sconto;
         const scriverePrezzo = document.getElementById('prezzo_finale')
-        scriverePrezzo.innerHTML = prezzo_finale ;
+        scriverePrezzo.innerHTML = prezzo_finale.toFixed(2) ;
     }
 
 
@@ -43,12 +43,12 @@ button.addEventListener ( 'click', function() {
         let sconto = price * 0.4;
         prezzo_finale = price - sconto;
         const scriverePrezzo = document.getElementById('prezzo_finale')
-        scriverePrezzo.innerHTML = prezzo_finale ;
+        scriverePrezzo.innerHTML = prezzo_finale.toFixed(2);
     }
      // Altrimenti non applicare nessuno sconto
     else {
         const scriverePrezzo = document.getElementById('prezzo_finale')
-        scriverePrezzo.innerHTML = price;
+        scriverePrezzo.innerHTML = price.toFixed(2);
     }
     
     carrozza.innerHTML = randomNumber(1,99)
