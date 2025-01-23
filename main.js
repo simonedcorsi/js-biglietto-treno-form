@@ -51,10 +51,10 @@ button.addEventListener ( 'click', function() {
         scriverePrezzo.innerHTML = price.toFixed(2);
     }
     
-    carrozza.innerHTML = randomNumber(1,99)
+    carrozza.innerHTML = randomNumber (1, 55);
 
 } )
 
 function randomNumber(min,max) {
-Math.floor(Math.random() * max) + min;
+  return Math.floor((Math.random() * max) + min);
 }
